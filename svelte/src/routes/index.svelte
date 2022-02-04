@@ -65,6 +65,8 @@
         font-size: 45px;
         color: #406ba3;
         font-style: italic;
+        border-bottom: solid 2px;
+        border-color: #406ba3;
     }
 
     .break {
