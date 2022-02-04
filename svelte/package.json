@@ -2,6 +2,8 @@
   "name": "svelte",
   "version": "0.0.1",
   "scripts": {
+    "css-dev": "npx tailwindcss -i ./src/input.css -o ./static/style.css --watch",
+    "css-prod": "npx tailwindcss -i ./src/input.css -o ./static/style.css",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
@@ -10,7 +12,8 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "svelte": "^3.44.0"
+    "svelte": "^3.44.0",
+    "svelte-scrollto": "^0.2.0"
   },
   "type": "module"
 }
