@@ -28,7 +28,7 @@
     $: correctDate = isLoading ? 'Loading...' : (new Date(orderedKeys[range].toString().slice(0, 4), orderedKeys[range].toString().slice(4, 6) - 1, orderedKeys[range].toString().slice(6,8))).toDateString().slice(4)
     $: correctKey = String(orderedKeys[range]) + '.html'
 
-    fetch('http://localhost:3000/snapshots.json').then(async (res) => {
+    fetch('https://history-of-google.netlify.app/snapshots.json').then(async (res) => {
         const json = await res.json();
         Object.keys(json).forEach(key => {
             const data = json[key].replaceAll(/url\(\//g, 'url(https://web.archive.org/');
