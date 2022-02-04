@@ -14,7 +14,7 @@
         playing = true;
         while(playing) {
             if(preload) await tick();
-            else await new Promise(r => setTimeout(r, 250));
+            else await new Promise(r => setTimeout(r, 350));
             if(range == 315) stop();
             range = range == 315 ? 0 : range + 1
         }
