@@ -13,6 +13,7 @@ import A from "./web/[...slug].svelte";
     
     function setTimeline(yyyymmdd) {
         let index = orderedKeys.map(key => key.toString().slice(0,8)).indexOf(yyyymmdd);
+        console.log(orderedKeys[1], orderedKeys[100])
         if(index != -1) {
             range = index;
             animateScroll.scrollToTop();
