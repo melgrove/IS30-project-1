@@ -240,17 +240,27 @@ import A from "./web/[...slug].svelte";
         </div>
         <p id = "user-experience" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">User Experience</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although the visual design and function of Search has only changed slightly in the past two decades, it has added many quality-of-life improvements, fulfilling O’Reilly’s 7th Principle of Web 2.0: a rich user experience. It has evolved from a bare-bones list of results to a search engine containing new widgets, advanced search options, voice recognition, and more. 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although the visual design and function of Search has only changed slightly in the past two decades, it has added many quality-of-life improvements, fulfilling both O’Reilly’s 7th Principle of Web 2.0: a rich user experience and the trend described by Burnett and Marshall in the increased graphics of the modern web. It has evolved from a bare-bones list of results to a search engine containing new widgets, advanced search options, voice recognition, and more over time indicating a gradual shift towards a rich user experience rather than a versioned release as indicated by O’Reilly. 
         </div>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To improve their search results, Google needs to acquire more and more data. Thus, O’Reilly’s 3rd principle of Web 2.0 “Data is the Next Intel Inside” sums up Google’s entire business ideology pretty well. O’Reilly also correctly predicted, “companies that succeed will create applications that learn from their users . . . using . . . the richness of the shared data” (pp. 5). Google knows this, so like Amazon with the Echo, gives out free Google Homes to gather even more data to improve Search and their voice recognition.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through these past two decades, Google Search has become considerably more personalized. Google collects data about each user to produce better recommendations and results. As O’Reilly predicted, “companies that succeed will create applications that learn from their users” using “the richness of the shared data,” (PP). Thus, O’Reilly’s 3rd principle of Web 2.0 “Data is the Next Intel Inside” sums up Google’s pathway to success. Instead of serving the same information to everyone, Google leverages machine learning models to recommend improved results. If a frequent traveler searches for “Barcelona”, Barcelona’s top attractions and sites appear, whereas a soccer fan sees a sports widget with the team’s schedule and scores. This personalization is a continuation of internet trends that is described by Burnett and Marshall. While the use of data specifically is heralded as a creation of Web 2.0 in O’Reilly, the driving force behind it, the desire for personalization, is a factor of internet culture that has existed for far longer than the “Web 2.0 era.”  
         </div>
-        <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through these past two decades, Google Search has become considerably more personalized. Google collects data about each user to produce better recommendations and results. Instead of serving the same information to everyone, Google leverages machine learning models to recommend improved results. If a marine biologist searches for “dolphins”, academic articles and news about dolphins appear, whereas a Miami Dolphins fan sees a sports widget with the team’s schedule and scores.  
-        </div>
+        <figure class = "items-center">
+            <div style = "margin-left: 13%">
+                <img style= "width:41%" src = "./images/barcelonaTourism.PNG">
+                <img style= "width:47%" src = "./images/barcelonaSoccer.PNG">
+            </div>
+            <p class = "caption">Left image shows a modern-day search of "barcelona" from a tourist's perspective. Right image was taken on the Wayback Machine in 2020, showing "barcelona" results with the sports widget. </p>
+        </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One impactful design change to Google Search is the widgets. They provide users with information immediately, saving valuable time over billions of searches. Although it only saves one click, it almost halves the time required for users to find their results. Some widgets include the weather forecast, sports scores, and the calculator. Another improvement is the advanced search customization. For example, if someone was writing a paper and needed credible information, they could append “:.edu OR :.gov” to the end of their query to only get websites that end in .edu or .gov. Like the widgets, the search options save valuable time by allowing users to easily narrow down their results.
         </div>
+        <figure class = "items-center">
+            <div style = "margin-left: 28%">
+                <img style= "width:60%" src = "./images/advancedSearch.PNG">
+            </div>
+            <p class = "caption">Image shows a modern-day search of "vaccines :.edu OR :.gov" to obtain results ending in these top level domains.</p>
+        </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2011, Google added Voice Search, allowing users to search simply by speaking. It not only helps to save time but also helps those who cannot easily type. Additionally, for Voice Search results that include widgets, Google reads the info inside each widget aloud, which aids the visually impaired. Thus, Voice Search illustrates how websites have become more accessible over time. 
         </div>
