@@ -12,8 +12,7 @@ import A from "./web/[...slug].svelte";
     let isLoading = true;
     
     function setTimeline(yyyymmdd) {
-        let index = orderedKeys.map(key => key.toString().slice(0,8)).indexOf(yyyymmdd);
-        console.log(orderedKeys[1], orderedKeys[100])
+        let index = orderedKeys.map(key => key.toString().slice(0,8)).indexOf(yyyymmdd.toString());
         if(index != -1) {
             range = index;
             animateScroll.scrollToTop();
@@ -89,7 +88,7 @@ import A from "./web/[...slug].svelte";
         word-spacing: 3px;
         color: #406ba3;
         text-decoration: black wavy underline;
-        background-color: #e6e6e6;
+        background-color: #f7f7f7;
         cursor: pointer;
     }
 
@@ -141,10 +140,10 @@ import A from "./web/[...slug].svelte";
     }
 </style> 
 
-<header style="z-index: 1001" class="w-full h-8 shadow-lg bg-white flex flex-row justify-center items-center fixed">
+<header style="z-index: 1001" class="w-full h-8 bg-white flex flex-row justify-center items-center fixed">
     <p style="z-index: 1002" class="title h-8 justify-center items center fixed">History of Google</p>
 <div style= "height: 6em" class=" flex flex-row justify-center px-4">
-    <div style= "height: 4.5em; z-index: 1000; padding-top: 3em" class="w-full bg-white flex flex-row justify-center items-center fixed">
+    <div style= "height: 4.5em; z-index: 1000; padding-top: 3em" class="shadow-lg w-full bg-white flex flex-row justify-center items-center fixed">
         <button on:click={() => animateScroll.scrollTo({element: '#intro', offset: -150})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Introduction
         </button>
