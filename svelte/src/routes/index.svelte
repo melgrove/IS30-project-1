@@ -86,10 +86,10 @@ import A from "./web/[...slug].svelte";
         font-size: 18px;
         line-height: 45px;
         word-spacing: 3px;
-        color: #406ba3;
-        text-decoration: black wavy underline;
+        text-decoration: black underline;
         background-color: #f7f7f7;
         cursor: pointer;
+        font-style: italic;
     }
 
     .break {
@@ -297,6 +297,10 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another limitation is that we only see dynamic and personalized content that is loaded by the archiver. Looking at one Wayback result for the Google search of `“google”`, the top result is “google.ca”. We can assume the archivist is Canadian. However, if someone wanted to view a website in a less common language or from the perspective of a small country, it’s much less likely for that to happen. 
         </div>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Conclusion</p>
+        <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Appendix</p>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A core part of our project is to see how google.com has changed over time. To aid our efforts in doing so, we created the visual timeline at the top of the site. We created this by writing a program to web scrape Wayback Machine snapshots over time at a reasonably high density. We then downloaded the HTML from these snapshots and formatted it so that images and CSS displays correctly. The resulting HTML pages are displayed on this website. As O'Reilly coined, the code for our project is "open source", and available <a class="link" href="https://github.com/melgrove/wayback-machine-scraper">here</a>.
+        </div>
     </div>
     <p on:click={() => animateScroll.scrollToTop()} class="text-center date hover:underline cursor-pointer pb-20">back to top</p>
     </div>
