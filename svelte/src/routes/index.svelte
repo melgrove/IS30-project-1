@@ -79,6 +79,18 @@ import A from "./web/[...slug].svelte";
         border-bottom: solid 2px;
         border-color: #406ba3;
     }
+    
+    .link {
+        font-weight: 400;
+        font-family: 'Lora', serif;
+        font-size: 18px;
+        line-height: 45px;
+        word-spacing: 3px;
+        color: #406ba3;
+        text-decoration: black wavy underline;
+        background-color: #e6e6e6;
+        cursor: pointer;
+    }
 
     .break {
         font-weight: 700;
@@ -144,8 +156,8 @@ import A from "./web/[...slug].svelte";
         <button on:click={() => animateScroll.scrollTo({element: '#search-ads', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Search & Ads
         </button>
-        <button on:click={() => animateScroll.scrollTo({element: '#intro', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
-            Oliver's Section
+        <button on:click={() => animateScroll.scrollTo({element: '#empire', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
+            The Google Empire
         </button>
         <button on:click={() => animateScroll.scrollTo({element: '#wayback', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Wayback Machine Retrospection
@@ -241,6 +253,16 @@ import A from "./web/[...slug].svelte";
         </div>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2011, Google added Voice Search, allowing users to search simply by speaking. This not only helps to save time but also helps those who cannot easily type.  Additionally, for Voice Search results that include widgets, Google reads the info aloud, which helps the visually impaired. This exemplifies how websites have been becoming more accessible over time.
+        </div>
+        <p id = "empire" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">The Google Empire</p>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over the first two decades of the millennium, Google has evolved from a simple database based on a clever algorithm, to an indispensable empire that is almost synonymous with the internet itself. This is clear even when looking at the homepage of google, which has hardly changed at all over this incredible transformative period. At <span class="link" on:click={() => setTimeline(19990428)}>its inception</span>, the only thing on the website was a search box. <span class="link" on:click={() => setTimeline(20210827)}>Now</span>, although subtle, Google has added a top bar with links to an entire platform of other services which are simultaneously completely separate, and intimately connected to Search.
+        </div>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google's expansion of external services is an embodiment of Web 2.0 as O'Reilly proposed it in 2005.  Unlike Netscape, Google truly realized that "the value of the software is proportional to the scale and dynamism of the data it helps to manage" (O'Reilly pp 1). A perfect example of this, which is <span class="link" on:click={() => setTimeline(20080306)}>meekly shown</span> in the header of Google Search, is Gmail. Google didn't generate revenue from licensing the software to the end user or demanding a cost to use it, instead they allowed use of it and instead generated revenue from the data of the massive amount of people who used it.
+        </div>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another piece of the puzzle, which has propelled GSuite, Gmail, Maps, and others into what they are today, is O'Reilly's idea of Rich User Experiences. Previously, complex and interactive experiences could only be found on PCs, and inflexible applets and flash applications. Consequently, "the potential of the web to deliver full scale applications didn't hit the mainstream till Google introduced Gmail" (O'Reilly pp 5). The technological breakthrough which allowed web applications with rich user experiences was the extended use of JavaScript, and subsequently AJAX in the browser. Instead of sites being unchangeable pages similar to physical pieces of paper, websites can now load external data after they have been served and change the format of the site completely by manipulating the DOM with JavaScript. A new era began, where "web developers are finally able to build web applications as rich as local PC-based applications" (O'Reilly pp 5).
         </div>
         <p id = "search-ads" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Search & Ads</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
