@@ -1,6 +1,7 @@
 <script>
     import * as animateScroll from "svelte-scrollto";
     import {tick} from 'svelte';
+import A from "./web/[...slug].svelte";
 
     let range = 0;
     let obj = {};
@@ -106,14 +107,21 @@
     .name-box {
         box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.2);
     }
+
+    .caption {
+        text-align: center;
+        font-size: 10px;
+        line-height: 2em;
+    }
+    img {
+        border: #406ba3 2px solid;
+    }
 </style> 
 
-<header style="z-index: 1001" class="w-full h-8 bg-white flex flex-row justify-center items-center fixed">
-    <p class="title">History of Google</p>
-</header>
-
-<div style= "height: 4.5em" class=" flex flex-row justify-center px-4">
-    <div style= "height: 4.5em; z-index: 1000; padding-top: 1em" class="w-full bg-white flex flex-row justify-center items-center fixed">
+<header style="z-index: 1001" class="w-full h-8 shadow-lg bg-white flex flex-row justify-center items-center fixed">
+    <p style="z-index: 1002" class="title h-8 justify-center items center fixed">History of Google</p>
+<div style= "height: 6em" class=" flex flex-row justify-center px-4">
+    <div style= "height: 4.5em; z-index: 1000; padding-top: 3em" class="w-full bg-white flex flex-row justify-center items-center fixed">
         <button on:click={() => animateScroll.scrollTo({element: '#intro', offset: -150})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Introduction
         </button>
@@ -137,7 +145,8 @@
         </button>
     </div>
 </div>
-<div class="h-full w-full bg-blue-100 pt-14">
+</header>
+<div class="h-full w-full bg-blue-100 pt-20">
     <!-- slider -->
     <div class=" h-14 flex flex-row justify-center px-4">
         {#if !playing}
@@ -176,11 +185,36 @@
         </div>
         <p id = "doodles" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Doodles</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The frequent change of Google’s logo on google.com, known as the Google Doodle, seemingly exemplifies the principles of Web 2.0, however it’s rise in 1988 indicates that it was an extension of Web 1.0 rather than a shift in internet culture. Google has a tradition of commemorating special events, messages, and anniversaries with “Google Doodles” , a temporary change in Google’s logo to match a theme. The first Google doodle was released in 1988 as a joke. In 2000, Google asked an intern to create a Google doodle for Bastille Day as a test case. The doodle was positively received and so Google kept creating them eventually developing a team of Doodlers to the cause. This reception of user feedback is an element of the constant Beta principle of Web 2.0. Google tested the idea of the Doodle on users and tracked their feedback, rather than testing on an internal committee. Eventually, Google started to take requests for days to celebrate, and even doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by the use of versions. Allen argues that versions create a narrative that may not actually exist. Versions imply that there is something new developed, while maintaining some sense of continuity (Allen 264). The Google Doodle has evolved over time, not suddenly released with new technology or brand new ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.
+            <figure style = "float: left; width:50%; margin-bottom: -10px" >
+                <img  src = "../../static/images/Bastille_Day.gif">
+                <p class = "caption">The first serious Google Doodle was produced for Bastille day. It served as a Beta to test popular reactions to the new idea.</p>
+            </figure>
+            The frequent change of Google’s logo on google.com, known as the Google Doodle, seemingly exemplifies the principles of Web 2.0, however it’s rise in 1988 indicates that it was an extension of Web 1.0 rather than a shift in internet culture. Google has a tradition of commemorating special events, messages, and anniversaries with “Google Doodles” , a temporary change in Google’s logo to match a theme. The first Google doodle was released in 1988 as a joke. In 2000, Google asked an intern to create a Google doodle for Bastille Day as a test case. The doodle was positively received and so Google kept creating them eventually developing a team of Doodlers to the cause. This reception of user feedback is an element of the constant Beta principle of Web 2.0. Google tested the idea of the Doodle on users and tracked their feedback, rather than testing on an internal committee.
+            <figure>
+                <img src = "../../static/images/Doodle4Google.png">
+                <p class = "caption">This doodle was user submitted in the Doodle4Google competition, an annual event in which users submit doodle art to be displayed on Google.com</p>
+            </figure>
+            As time moved forward, Google started to take requests for days to celebrate, and even doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by the use of versions. Allen argues that versions create a narrative that may not actually exist. Versions imply that there is something new developed, while maintaining some sense of continuity (Allen pp. 264). The Google Doodle has evolved over time, not suddenly released with new technology or brand new ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.
         </div>
         <p class="break relative w-2/3 text-center mt-8 -mb-2">***</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Even if Google does not fit with the language of versions, the design of the Google Doodle represents growth in internet culture. Google Doodles are interactive, personalized, and constantly changing. This dynamic content represents a tendency to continually change content, that O’Reilly terms the “End of the Software Release Cycle” (PP).  Instead of releasing major changes, Google is making small changes to it’s site nearly daily. Additionally, the Doodle changes based on a user’s location indicating a kind of personalization that would not be possible on the static page that is most prevalent in the Web 1.0 era. The interactivity and dynamic pages were a natural progression from the early days of linked content(Burnett and Marshal PP). Finally, the rise of Doodle’s that encourage user interaction, such as games or multimedia, represent the shift away from the animated yet passive Flash technology (Ankerson PP). While Doodle’s were never made using Flash, a fact that is illuminated by the Wayback Machine’s ability to load them, they are still a representation of the increasing value placed on interactivity over passive Flash in the more modern days of the internet. The key characteristics of the development and rise of the Doodle display the development of the design of the modern internet.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Even if Google does not fit with the language of versions, the design of the Google Doodle represents growth in internet culture. Google Doodles are interactive, personalized, and constantly changing. The dynamic nature of the Doodle  represents a tendency to continually change content which O’Reilly terms the “End of the Software Release Cycle” (pp. 4).  Instead of releasing major changes, Google is making small changes to it’s site nearly daily.
+            </div>
+            <figure class = "items-center">
+                <div style = "margin-left: 7%">
+                    <img style= "width:45%;" src = "../../static/images/Nov10Sesame.png">
+                    <img style= "width:45%;" src = "../../static/images/Nov11_VeteransDay.png">
+                </div>
+                <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "../../static/images/Nov12_Std.png">
+                <p class = "caption">These doodles were selected on 3 consecutive days and display Google's ability to make small daily changes for dynamic content.</p>
+            </figure>
+            <div class="body w-5/6 sm:w-3/5 mt-8">
+            Additionally, the Doodle changes based on a user’s location indicating a kind of personalization that would not be possible on the static page that is most prevalent in the Web 1.0 era. The interactivity and dynamic pages were a natural progression from the early days of linked content(Burnett and Marshal pp 84-87). As one moves forward in time, the Google Doodles increase in their level of interactivity including games and other multimedia. As an example for Valentine’s Day in 2017, Google released a Doodle game where the user helps a pangolin reach their valentine. Unfortunately the Wayback Machine does not seem to be able to load these features and instead displays a still image of the Doodle.
+            <figure>
+                <img src = "../../static/images/Feb1417.png">
+                <p class = "caption">This doodle was released for Valentine's day and was originally displayed as an interactive game. Unfortunately that functionality is lost on the Wayback Machine.</p>
+            </figure>
+            However, Google archives their own Doodles, so these games can be found. The rise of Doodle’s that encourage user interaction, such as games or multimedia, represent the shift away from the animated yet passive Flash technology. This Flash technology became a subject of scorn due to its passive and inaccessible nature (Ankerson pp. 393). While Doodle’s were never made using Flash, a fact that is illuminated by the Wayback Machine’s ability to load them, they are still a representation of the increasing value placed on interactivity over passive Flash in the more modern days of the internet. The key characteristics of the development and rise of the Doodle display the development of the design of the modern internet.
         </div>
         <p id = "user-experience" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">User Experience</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
@@ -200,21 +234,33 @@
         </div>
         <p id = "search-ads" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Search & Ads</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transition from Web 1.0 to Web 2.0 marked the birth of a participative social web on the internet and significant modifications in the way web pages were designed and used. Core features of Web 2.0 companies include the ability to harness collective intelligence and leverage the “long-tail” through customer self-service. The long tail is a business strategy coined by Chris Anderson that allows companies to realize significant profits by selling low volumes of hard-to-find items to many customers, instead of only selling large volumes of a reduced number of popular items. At its core, Google’s success as a search engine and advertising partner stems from its advertising technique that has the ability to do these two things efficiently.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transition from Web 1.0 to Web 2.0 marked the birth of a participative social web on the internet and significant modifications in the way web pages were designed and used. Core features of Web 2.0 companies include the ability to harness collective intelligence and leverage the “long-tail” through customer self-service. The long tail is a business strategy coined by Chris Anderson that allows companies to realize significant profits by selling low volumes of hard-to-find items to many customers, instead of only selling large volumes of a reduced number of popular items. At its core, Google’s success as a search engine and advertising partner stems from its advertising technique that has the ability to do these two things efficiently. 
         </div>
+        <p class="break relative w-2/3 text-center mt-8 -mb-2">***</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While Web 2.0 marked a large shift in the way websites were designed and utilized, Google as a page has stayed relatively the same throughout the years. The core services the site provides have not changed drastically, but have rather been continually modified with slight updates and changes to its indices over time. For example, PageRank, a defining Web 2.0 feature of Google, is an algorithm used by Google Search to rank web pages in their search engine results. According to Google, PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. Tim O’Reilly highlights this as a “breakthrough in search which quickly made Google the undisputed search market leader.” Nowadays, there is much more that influences a website’s ranking in search, but PageRank marked a new method of providing better search results.
         </div>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google’s PageRank, an application of harnessing collective intelligence, has gone hand in hand with other Google services such as Google Ads and Adsense to leverage the long-tail and match customers with retailers. Google Ads is a service in which users and advertisers can pay to appear in Google search results pertaining to specific keywords, while Google AdSense is a program in which clients can pay to advertise their products on other related user channels and websites. As Tim O’Reilly puts it, “Google figured out how to enable ad placement on virtually any webpage.” In terms of search ads, rather than utilizing pop up or banner ads, Google favored the use of minimally intrusive, consumer-friendly text advertising.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google’s PageRank, an application of harnessing collective intelligence, has gone hand in hand with other Google services such as Google Ads and Adsense to leverage the long-tail and match customers with retailers. Google Ads is a service in which users and advertisers can pay to appear in Google search results pertaining to specific keywords, while Google AdSense is a program in which clients can pay to advertise their products on other related user channels and websites. As Tim O’Reilly puts it, “Google figured out how to enable ad placement on virtually any webpage.” In terms of search ads, rather than utilizing pop up or banner ads, Google favored the use of minimally intrusive, consumer-friendly text advertising. 
         </div>
-        <p class="break relative w-2/3 text-center mt-8 -mb-2">***</p>
+        <figure class = "items-center">
+            <img style= "width:32%" src = "../../static/images/shoeswayback.png">
+            <img style= "width:33%" src = "../../static/images/shoes1.png">
+            <img style= "width:33%" src = "../../static/images/shoes2.png">
+            <p class = "caption">The first of these images was taken on the wayback machine to show what a search used to look like, using the example search of shoes. The second to images show what a modern day search of the same keyword "shoes" brings up</p>
+        </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take the search phrase “shoes” for example. When on the Wayback Machine, a search of the term shoes on Google will bring up an older looking version of Google that looks archaic compared to what we have now. However, upon further examination, we can see that although the page looks much different, its functions are more or less the same when it comes to advertising and search results. In the Wayback Machine version, there is text-advertising for shoe retailers at the top of the search results (Google Ads), and we can see that there are over 1,420,000,000 results for shoes. Following the ads placed at the top, we can see more links to shoe retailers which have been ranked by PageRank. In contrast to the Wayback Machine version, a current search of the term “shoes” will bring up a similar page with more contemporary features. In addition to the ads filtered towards the top of the search page, the current version of Google provides results for shoe stores near your physical location as well as a map of all of the retailers in your area. There is also a tab labeled “Popular Products” which provides pictures of different shoes that link to different websites. We can also see that there are now over 5,400,000,000 results for “shoes” in the current day, which is not only a testament to the passage of time, but the Web 2.0 feature of increased user generated content and interactivity as well.
         </div>
         <p id = "wayback" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Wayback Machine Retrospection</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One drawback of the Wayback Machine is the snapshots for personalized websites are from the perspective of who took the snapshot. Looking at one Wayback result for the Google search of `“google”`, the top result is “google.ca”. We can assume the archivist is Canadian. However, if someone wanted to view a website in a less common language or from the perspective of a small country, it’s much less likely for that to happen. The ability to find more obscure perspectives on the Wayback Machine is inversely related to the level of personalization of a website.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Despite its best efforts to accurately document large portions of web history, the Wayback Machine has its fair share of limitations. The biggest advantage of the Wayback Machine is the wide range of sites crawled: by 2010, over 150 million pages were archived. However, this breadth comes at a price of depth, consistency, and accuracy.. The entire contents of a site are rarely preserved while the snapshots are often incomplete containing missing images and broken links. In the case of Google, the Wayback Machine is able to provide snapshots of the Google homepage and its respective search results layout throughout time. However, if you attempt to click on a link after completing a search or try to utilize any search tools such as images, videos, or news, the links are broken and will take you back to the Wayback Machine homepage.
+        </div>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to incomplete information within the snapshots, the Wayback Machine can only archive web pages that existed at a certain date and time, thus its content represents only a small fraction of the Internet at any particular time. Not to mention these archived snapshots of web pages are taken through the perspective of the archiver, so the Wayback Machine is unable to give insight into how a web page is utilized by users on a broader scale. In Google’s case, we are unable to see how search results and ads can vary between users because we are only given one point of reference for a particular moment in time. 
+        </div>
+        <div class="body w-5/6 sm:w-3/5 mt-8">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another limitation is that we only see dynamic and personalized content that is loaded by the archiver. Looking at one Wayback result for the Google search of `“google”`, the top result is “google.ca”. We can assume the archivist is Canadian. However, if someone wanted to view a website in a less common language or from the perspective of a small country, it’s much less likely for that to happen. 
         </div>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Conclusion</p>
     </div>
