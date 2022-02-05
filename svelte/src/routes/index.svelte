@@ -205,7 +205,7 @@ import A from "./web/[...slug].svelte";
                     <img style= "width:45%;" src = "./images/Nov10Sesame.png">
                     <img style= "width:45%;" src = "./images/Nov11_VeteransDay.png">
                 </div>
-                <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "../../static/images/Nov12_Std.png">
+                <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "./images/Nov12_Std.png">
                 <p class = "caption">These doodles were selected on 3 consecutive days and display Google's ability to make small daily changes for dynamic content.</p>
             </figure>
             <div class="body w-5/6 sm:w-3/5 mt-8">
@@ -244,9 +244,11 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google’s PageRank, an application of harnessing collective intelligence, has gone hand in hand with other Google services such as Google Ads and Adsense to leverage the long-tail and match customers with retailers. Google Ads is a service in which users and advertisers can pay to appear in Google search results pertaining to specific keywords, while Google AdSense is a program in which clients can pay to advertise their products on other related user channels and websites. As Tim O’Reilly puts it, “Google figured out how to enable ad placement on virtually any webpage.” In terms of search ads, rather than utilizing pop up or banner ads, Google favored the use of minimally intrusive, consumer-friendly text advertising. 
         </div>
         <figure class = "items-center">
-            <img style= "width:32%" src = "./images/shoeswayback.png">
-            <img style= "width:33%" src = "./images/shoes1.png">
-            <img style= "width:33%" src = "./images/shoes2.png">
+            <img style= "width:45%; margin-left:25%; margin-right:auto; margin-bottom: 5px; display: block" src = "./images/shoeswayback.png">
+            <div style = "margin-left: 5%">
+                <img style= "width:45%" src = "./images/shoes1.png">
+                <img style= "width:49%" src = "./images/shoes2.png">
+            </div>
             <p class = "caption">The first of these images was taken on the wayback machine to show what a search used to look like, using the example search of shoes. The second to images show what a modern day search of the same keyword "shoes" brings up</p>
         </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
