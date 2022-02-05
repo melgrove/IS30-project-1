@@ -10,7 +10,17 @@ import A from "./web/[...slug].svelte";
     let orderedKeys = [];
     let playing = false;
     let isLoading = true;
-
+    
+    function setTimeline(yyyymmdd) {
+        let index = orderedKeys.map(key => key.toString().slice(0,8)).indexOf(yyyymmdd);
+        if(index != -1) {
+            range = index;
+            animateScroll.scrollToTop();
+        } else {
+            console.log('invalid date');
+        }
+    }
+    
     async function start(preload) {
         playing = true;
         while(playing) {
