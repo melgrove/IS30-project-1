@@ -299,7 +299,7 @@ import A from "./web/[...slug].svelte";
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Conclusion</p>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Appendix</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A core part of our project is to see how google.com has changed over time. To aid our efforts in doing so, we created the visual timeline at the top of the site. We created this by writing a program to web scrape Wayback Machine snapshots over time at a reasonably high density. We then downloaded the HTML from these snapshots and formatted it so that images and CSS displays correctly. The resulting HTML pages are displayed on this website. As O'Reilly coined, the code for our project is "open source", and available <a class="link" href="https://github.com/melgrove/wayback-machine-scraper">here</a>.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A core part of our project is to see how google.com has changed over time. To aid our efforts in doing so, we created the visual timeline at the top of the site. We created this by writing a program to web scrape Wayback Machine snapshots over time at a reasonably high density. We then downloaded the HTML from these snapshots and formatted it so that images and CSS displays correctly. The resulting HTML pages are displayed on this website. The code is available <a class="link" href="https://github.com/melgrove/wayback-machine-scraper">here</a>.
         </div>
     </div>
     <p on:click={() => animateScroll.scrollToTop()} class="text-center date hover:underline cursor-pointer pb-20">back to top</p>
