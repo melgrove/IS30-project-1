@@ -191,7 +191,7 @@ import A from "./web/[...slug].svelte";
             </figure>
             The frequent change of Google’s logo on google.com, known as the Google Doodle, seemingly exemplifies the principles of Web 2.0, however it’s rise in 1988 indicates that it was an extension of Web 1.0 rather than a shift in internet culture. Google has a tradition of commemorating special events, messages, and anniversaries with “Google Doodles” , a temporary change in Google’s logo to match a theme. The first Google doodle was released in 1988 as a joke. In 2000, Google asked an intern to create a Google doodle for Bastille Day as a test case. The doodle was positively received and so Google kept creating them eventually developing a team of Doodlers to the cause. This reception of user feedback is an element of the constant Beta principle of Web 2.0. Google tested the idea of the Doodle on users and tracked their feedback, rather than testing on an internal committee.
             <figure>
-                <img src = "../../static/images/Doodle4Google.png">
+                <img src = "./images/Doodle4Google.png">
                 <p class = "caption">This doodle was user submitted in the Doodle4Google competition, an annual event in which users submit doodle art to be displayed on Google.com</p>
             </figure>
             As time moved forward, Google started to take requests for days to celebrate, and even doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by the use of versions. Allen argues that versions create a narrative that may not actually exist. Versions imply that there is something new developed, while maintaining some sense of continuity (Allen pp. 264). The Google Doodle has evolved over time, not suddenly released with new technology or brand new ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.
@@ -202,8 +202,8 @@ import A from "./web/[...slug].svelte";
             </div>
             <figure class = "items-center">
                 <div style = "margin-left: 7%">
-                    <img style= "width:45%;" src = "../../static/images/Nov10Sesame.png">
-                    <img style= "width:45%;" src = "../../static/images/Nov11_VeteransDay.png">
+                    <img style= "width:45%;" src = "./images/Nov10Sesame.png">
+                    <img style= "width:45%;" src = "./images/Nov11_VeteransDay.png">
                 </div>
                 <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "../../static/images/Nov12_Std.png">
                 <p class = "caption">These doodles were selected on 3 consecutive days and display Google's ability to make small daily changes for dynamic content.</p>
@@ -211,7 +211,7 @@ import A from "./web/[...slug].svelte";
             <div class="body w-5/6 sm:w-3/5 mt-8">
             Additionally, the Doodle changes based on a user’s location indicating a kind of personalization that would not be possible on the static page that is most prevalent in the Web 1.0 era. The interactivity and dynamic pages were a natural progression from the early days of linked content(Burnett and Marshal pp 84-87). As one moves forward in time, the Google Doodles increase in their level of interactivity including games and other multimedia. As an example for Valentine’s Day in 2017, Google released a Doodle game where the user helps a pangolin reach their valentine. Unfortunately the Wayback Machine does not seem to be able to load these features and instead displays a still image of the Doodle.
             <figure>
-                <img src = "../../static/images/Feb1417.png">
+                <img src = "./images/Feb1417.png">
                 <p class = "caption">This doodle was released for Valentine's day and was originally displayed as an interactive game. Unfortunately that functionality is lost on the Wayback Machine.</p>
             </figure>
             However, Google archives their own Doodles, so these games can be found. The rise of Doodle’s that encourage user interaction, such as games or multimedia, represent the shift away from the animated yet passive Flash technology. This Flash technology became a subject of scorn due to its passive and inaccessible nature (Ankerson pp. 393). While Doodle’s were never made using Flash, a fact that is illuminated by the Wayback Machine’s ability to load them, they are still a representation of the increasing value placed on interactivity over passive Flash in the more modern days of the internet. The key characteristics of the development and rise of the Doodle display the development of the design of the modern internet.
@@ -244,9 +244,9 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google’s PageRank, an application of harnessing collective intelligence, has gone hand in hand with other Google services such as Google Ads and Adsense to leverage the long-tail and match customers with retailers. Google Ads is a service in which users and advertisers can pay to appear in Google search results pertaining to specific keywords, while Google AdSense is a program in which clients can pay to advertise their products on other related user channels and websites. As Tim O’Reilly puts it, “Google figured out how to enable ad placement on virtually any webpage.” In terms of search ads, rather than utilizing pop up or banner ads, Google favored the use of minimally intrusive, consumer-friendly text advertising. 
         </div>
         <figure class = "items-center">
-            <img style= "width:32%" src = "../../static/images/shoeswayback.png">
-            <img style= "width:33%" src = "../../static/images/shoes1.png">
-            <img style= "width:33%" src = "../../static/images/shoes2.png">
+            <img style= "width:32%" src = "./images/shoeswayback.png">
+            <img style= "width:33%" src = "./images/shoes1.png">
+            <img style= "width:33%" src = "./images/shoes2.png">
             <p class = "caption">The first of these images was taken on the wayback machine to show what a search used to look like, using the example search of shoes. The second to images show what a modern day search of the same keyword "shoes" brings up</p>
         </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
