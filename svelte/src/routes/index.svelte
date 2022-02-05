@@ -186,7 +186,7 @@ import A from "./web/[...slug].svelte";
         <p id = "doodles" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Doodles</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             <figure style = "float: left; width:50%; margin-bottom: -10px" >
-                <img  src = "../../static/images/Bastille_Day.gif">
+                <img  src = "./images/Bastille_Day.gif">
                 <p class = "caption">The first serious Google Doodle was produced for Bastille day. It served as a Beta to test popular reactions to the new idea.</p>
             </figure>
             The frequent change of Google’s logo on google.com, known as the Google Doodle, seemingly exemplifies the principles of Web 2.0, however it’s rise in 1988 indicates that it was an extension of Web 1.0 rather than a shift in internet culture. Google has a tradition of commemorating special events, messages, and anniversaries with “Google Doodles” , a temporary change in Google’s logo to match a theme. The first Google doodle was released in 1988 as a joke. In 2000, Google asked an intern to create a Google doodle for Bastille Day as a test case. The doodle was positively received and so Google kept creating them eventually developing a team of Doodlers to the cause. This reception of user feedback is an element of the constant Beta principle of Web 2.0. Google tested the idea of the Doodle on users and tracked their feedback, rather than testing on an internal committee.
