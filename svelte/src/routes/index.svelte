@@ -80,14 +80,13 @@ import A from "./web/[...slug].svelte";
         border-color: #406ba3;
     }
     
-    .link {
+    a, .link {
         font-weight: 400;
         font-family: 'Lora', serif;
         font-size: 18px;
         line-height: 45px;
         word-spacing: 3px;
-        text-decoration: black underline;
-        background-color: #f7f7f7;
+        color:#406ba3;
         cursor: pointer;
         font-style: italic;
     }
@@ -138,15 +137,12 @@ import A from "./web/[...slug].svelte";
     img {
         border: #406ba3 2px solid;
     }
-    a {
-        color:#406ba3
-    }
 </style> 
 
 <header style="z-index: 1001" class="w-full h-8 bg-white flex flex-row justify-center items-center fixed">
     <p style="z-index: 1002" class="title h-8 justify-center items center fixed">History of Google</p>
 <div style= "height: 6em" class=" flex flex-row justify-center px-4">
-    <div style= "height: 4.5em; z-index: 1000; padding-top: 3em" class="shadow-lg w-full bg-white flex flex-row justify-center items-center fixed">
+    <div style= "height: 4.5em; z-index: 1000; padding-top: 4em" class="shadow-lg w-full bg-white flex flex-row justify-center items-center fixed">
         <button on:click={() => animateScroll.scrollTo({element: '#intro', offset: -150})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Introduction
         </button>
@@ -165,16 +161,13 @@ import A from "./web/[...slug].svelte";
         <button on:click={() => animateScroll.scrollTo({element: '#wayback', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Wayback Machine Retrospection
         </button>
-        <button on:click={() => animateScroll.scrollTo({element: '#conclusion', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
-            Conclusion
-        </button>
         <button on:click={() => animateScroll.scrollTo({element: '#works-cited', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Works Cited
         </button>
     </div>
 </div>
 </header>
-<div class="h-full w-full bg-blue-100 pt-20">
+<div style = "padding-top: 7rem" class="h-full w-full bg-blue-100">
     <!-- slider -->
     <div class=" h-14 flex flex-row justify-center px-4">
         {#if !playing}
@@ -201,6 +194,7 @@ import A from "./web/[...slug].svelte";
             {@html obj[correctKey]}
         {/if}
     </div>
+    <p class = "caption">Although this project only analyzes Google from 2000 to 2020, the animation has a longer timeframe for illustrative effect.</p>
     <!-- Writing -->
     <div class="flex flex-col w-full items-center mt-[620px] ">
         <div class="rounded-2xl  px-6 name-box bg-blue-200 mx-4 mt-4">
@@ -223,7 +217,7 @@ import A from "./web/[...slug].svelte";
                 <img src = "./images/Doodle4Google.png" alt = "A doodle for goodle example to show unity">
                 <p class = "caption">This doodle was user submitted in the Doodle4Google competition, an annual event in which users submit doodle art to be displayed on Google.com</p>
             </figure>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This reliance on users is further display as Google began to take requests for days to celebrate and accept doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by versions. Allen argues that versions create a narrative of something new developing at one moment, even as it implies continuity (Allen pp. 264) that may not actually exist. The Google Doodle has evolved over time, since before Web 2.0, without sudden releases of technology or ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This reliance on users is further display as Google began to take requests for days to celebrate and accept doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by versions. Allen argues that versions create a narrative of something new developing at one moment, even as it implies continuity (Allen p. 264) that may not actually exist. The Google Doodle has evolved over time, since before Web 2.0, without sudden releases of technology or ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.  
         </div>
         <p class="break relative w-2/3 text-center mt-8 -mb-2">***</p>
         
@@ -239,9 +233,9 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The growth in intended use of the Google Doodle represents shift in internet culture towards interactivity and dynamism. The first use of the doodle as a commemoration of a special event display a dynamic nature that fits with what O’Reilly terms the “End of the Software Release Cycle” <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=4" target="_blank">(p.4)</a>.  Instead of releasing major changes, Google is making small changes to its site nearly daily. Additionally, the Doodle changes based on a user’s location indicating personalization that would not be possible on the static page that is most prevalent in the Web 1.0 era. As discussed later, this is a fact that is largely lost on the Wayback Machine. The personalized and dynamic pages were a natural progression from the early days of linked content (Burnett and Marshal pp 84-87). 
             <figure>
                 <img src = "./images/Feb1417.png" alt = "Doodle from Valentine's Day 2017 with pangolins.">
-                <p class = "caption">This doodle was released for Valentine's day and was originally displayed as an interactive game. Unfortunately that functionality is lost on the Wayback Machine.</p>
+                <p class = "caption">This Doodle was released for Valentine's day and was originally displayed as an interactive game. Unfortunately that functionality is lost on the Wayback Machine.</p>
             </figure>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through time, Google Doodles increased their interactivity by including games and other multimedia. As an example, for Valentine’s Day in 2017, Google released a Doodle game where the user helps a pangolin reach their valentine. Unfortunately, the Wayback Machine cannot load these features and instead displays a still image of the Doodle. Interaction in internet trends rose as a counter to Flash which was criticized for being passive and inaccessible (Ankerson pp. 393). The gradual shift from a passive, yet dynamic, way to commemorate events to a more interactive design illustrate developments in the internet from static pages to the rich modern web.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through time, Google Doodles increased their interactivity by including games and other multimedia. As an example, for Valentine’s Day in 2017, Google released a <a href = "https://www.google.com/doodles/valentines-day-2017-day-4" target = "_blank">Doodle</a> game where the user helps a pangolin reach their valentine. Unfortunately, the Wayback Machine cannot load these features and instead displays a still image of the Doodle. Interaction in internet trends rose as a counter to Flash which was criticized for being passive and inaccessible (Ankerson p. 393). The gradual shift from a passive, yet dynamic, way to commemorate events to a more interactive design illustrate developments in the internet from static pages to the rich modern web.
         </div>
         <p id = "user-experience" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">User Experience</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
@@ -299,8 +293,15 @@ import A from "./web/[...slug].svelte";
         </div>
         <p id = "empire" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">The Google Empire</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At its inception, the only thing on the Google’ homepage was a search box. Through subtle changes, Google has added a top bar with links to an entire platform of other services. Google's expansion of external services is an embodiment of Web 2.0 as O'Reilly proposed it in 2005.  Unlike Netscape, Google realized that "the value of the software is proportional to the scale and dynamism of the data it helps to manage" <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=1" target="_blank">(O'Reilly p. 1)</a>. A perfect example of this, which is meekly shown in the header of Google Search, is Gmail, an application released in 2004. Google didn't generate revenue from licensing the software to the end user or demanding a cost to use it, instead they generated revenue from the data of the massive amount of people who used it. As time moves forward, Google also released Maps in 2005, and the GSuite in 2006, which also added to the header on google search.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In <span class="link" on:click={() => setTimeline(20000512)}>2000</span>, Google’ homepage had hardly more than a search box. Through subtle changes, Google has added a <span class="link" on:click={() => setTimeline(20190721)}>top bar</span> with links to an entire platform of other services. Google's expansion of external services is an embodiment of Web 2.0 as O'Reilly proposed it in 2005.  Unlike Netscape, Google realized that "the value of the software is proportional to the scale and dynamism of the data it helps to manage" <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=1" target="_blank">(O'Reilly p. 1)</a>. A perfect example of this, which is <span class="link" on:click={() => setTimeline(20080306)}>meekly shown</span> in the header of Google Search, is Gmail, an application released in 2004. Google didn't generate revenue from licensing the software to the end user or demanding a cost to use it, instead they generated revenue from the data of the massive amount of people who used it. As time moves forward, Google also released Maps in 2005, and the GSuite in 2006, which also added to the header on google search.
         </div>
+        <figure class = "items-center">
+            <div style = "margin-left: 5%">
+                <img style= "width:45%" src = "./images/googlehome1.png" alt = "Google page in 2000. There is minimal links to other pages">
+                <img style= "width:49%" src = "./images/googlehome2.png" alt = "Google page in 2016. There are several links out to other parts of the platform.">
+            </div>
+            <p class = "caption">The first of these images is used to show the bare homepage of Google in 2000. The second image shows what Google's homepage looked like in 2016 with it's added top bar.</p>
+        </figure>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another piece of the puzzle, which has propelled GSuite, Gmail, Maps, and others into what they are today, is O'Reilly's idea of Rich User Experiences. Previously, complex and interactive experiences could only be found on PCs, and inflexible applets and flash applications. Consequently, "the potential of the web to deliver full scale applications didn't hit the mainstream till Google introduced Gmail" <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=5" target="_blank">(O'Reilly p. 5)</a>. The technological breakthrough which allowed web applications with rich user experiences was the extended use of JavaScript, and subsequently AJAX in the browser. Instead of sites being unchangeable similar to physical pieces of paper, websites could load external data after they have been served and change the format of the site completely. A new era began, where "web developers are finally able to build web applications as rich as local PC-based applications" <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=5" target="_blank">(O'Reilly p. 5)</a>. 
         </div>
@@ -314,14 +315,13 @@ import A from "./web/[...slug].svelte";
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to incomplete information within the snapshots, the Wayback Machine content represents only a small fraction of the Internet at any particular time. The choice of what to archive is left to the archivist and thus may miss webpages important to underrepresented groups. This can also apply to being unable to see certain personalization. Looking at one Wayback result for “google”, the top result is “google.ca”, indicating a Canadian archivist. However, if someone wanted to view a website in a less common language or from the perspective of a small country, it’s much less likely to be available. Also, how search results and ads vary between users is lost because each moment only has one reference.
         </div>
-        <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Conclusion</p>
         <p id = "works-cited" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Works Cited</p>
         <div class="body w-5/6 sm:w-3/5 mt-8 items-center">
             <div style = "margin-left: 42%; margin-right: auto" class = "items-center justify-center">Works Cited:</div>
-            <br>Allen, Matthew. “What Was Web 2.0? Versions as the Dominant Mode of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet History.” New Media & Society, vol. 15, no. 2, Mar. 2013, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 260–275, doi:10.1177/1461444812451567.
-            <br>Ankerson, Megan Sapnar. “Writing Web Histories with an Eye on the Analog &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past.” New Media & Society, vol. 14, no. 3, May 2012, pp. 384–400, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doi:10.1177/1461444811414834.
-            <br>Burnett, Robert and Marshall, P. David. Web Theory. Routledge, 2003, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 81-104.
-            <br>O'Reilly, Time. “What Is Web 2.0.” O'Reilly, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html. 
+            <br>Allen, Matthew. “What Was Web 2.0? Versions as the Dominant Mode of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet History.” New Media & Society, vol. 15, no. 2, Mar. 2013, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 260–275, <a href = "https://journals.sagepub.com/doi/10.1177/1461444812451567" target="_blank">doi:10.1177/1461444812451567</a>.
+            <br>Ankerson, Megan Sapnar. “Writing Web Histories with an Eye on the Analog &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past.” New Media & Society, vol. 14, no. 3, May 2012, pp. 384–400, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://journals.sagepub.com/doi/full/10.1177/1461444811414834" target="_blank">doi:10.1177/1461444811414834</a>.
+            <br>Burnett, Robert and Marshall, P. David. Web Theory. Routledge, 2003, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 81-104. <a href = "https://bruinlearn.ucla.edu/courses/76661/pages/mon-1-slash-10-readings-and-reading-questions?module_item_id=4110787" target = "_blank">link</a>
+            <br>O'Reilly, Time. “What Is Web 2.0.” O'Reilly, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html?page=1" target = "_blank">https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html</a>. 
         </div>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Appendix</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
