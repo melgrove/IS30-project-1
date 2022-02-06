@@ -165,6 +165,9 @@ import A from "./web/[...slug].svelte";
         <button on:click={() => animateScroll.scrollTo({element: '#conclusion', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
             Conclusion
         </button>
+        <button on:click={() => animateScroll.scrollTo({element: '#works-cited', offset: -100})} class="h-10 mt-4 mr-4 px-2 bg-blue-100 hover:bg-gray-200 text-bold rounded border shadow border-black fontfam ">
+            Works Cited
+        </button>
     </div>
 </div>
 </header>
@@ -208,12 +211,12 @@ import A from "./web/[...slug].svelte";
         <p id = "doodles" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Doodles</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             <figure style = "float: left; width:50%; margin-bottom: -10px" >
-                <img  src = "./images/Bastille_Day.gif">
+                <img src = "./images/Bastille_Day.gif" alt = "Google Doodle from Bastille Day 2000">
                 <p class = "caption">The first serious Google Doodle was produced for Bastille day. It served as a Beta to test popular reactions to the new idea.</p>
             </figure>
             The frequent change of Google’s logo on google.com, known as the Google Doodle, seemingly exemplifies the principles of Web 2.0, however it’s rise in 1988 indicates that it was an extension of Web 1.0 rather than a shift in internet culture. Google has a tradition of commemorating special events, messages, and anniversaries with “Google Doodles” , a temporary change in Google’s logo to match a theme. The first Google doodle was released in 1988 as a joke. In 2000, Google asked an intern to create a Google doodle for Bastille Day as a test case. The doodle was positively received and so Google kept creating them eventually developing a team of Doodlers to the cause. This reception of user feedback is an element of the constant Beta principle of Web 2.0. Google tested the idea of the Doodle on users and tracked their feedback, rather than testing on an internal committee.
             <figure>
-                <img src = "./images/Doodle4Google.png">
+                <img src = "./images/Doodle4Google.png" alt = "A doodle for goodle example to show unity">
                 <p class = "caption">This doodle was user submitted in the Doodle4Google competition, an annual event in which users submit doodle art to be displayed on Google.com</p>
             </figure>
             As time moved forward, Google started to take requests for days to celebrate, and even doodle art from the general public. This willingness to incorporate user content exemplifies the “bottom-up” development of Web 2.0 pages. Thus, it seems as though Google’s growth within the Doodle follows principles of the 2.0 timeline as the Web 2.0 era rose. However, this was a gradual growth of technology, not a drastic change in culture implied by the use of versions. Allen argues that versions create a narrative that may not actually exist. Versions imply that there is something new developed, while maintaining some sense of continuity (Allen pp. 264). The Google Doodle has evolved over time, not suddenly released with new technology or brand new ideas. This gradual change displays the shifts in internet culture towards user generated content and the perpetual Beta, but rejects the language of versioning inherent in Web 2.0.
@@ -224,16 +227,16 @@ import A from "./web/[...slug].svelte";
             </div>
             <figure class = "items-center">
                 <div style = "margin-left: 7%">
-                    <img style= "width:45%;" src = "./images/Nov10Sesame.png">
-                    <img style= "width:45%;" src = "./images/Nov11_VeteransDay.png">
+                    <img style= "width:45%;" src = "./images/Nov10Sesame.png" alt = "Doodle for Google on the aniversary of Sesame Street">
+                    <img style= "width:45%;" src = "./images/Nov11_VeteransDay.png" alt = "Doodle for Veterans day">
                 </div>
-                <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "./images/Nov12_Std.png">
+                <img style= "width:45%; margin-left:25%; margin-right:auto; display: block" src = "./images/Nov12_Std.png" alt = "Google page with no doodle">
                 <p class = "caption">These doodles were selected on 3 consecutive days and display Google's ability to make small daily changes for dynamic content.</p>
             </figure>
             <div class="body w-5/6 sm:w-3/5 mt-8">
             Additionally, the Doodle changes based on a user’s location indicating a kind of personalization that would not be possible on the static page that is most prevalent in the Web 1.0 era. The interactivity and dynamic pages were a natural progression from the early days of linked content(Burnett and Marshal pp 84-87). As one moves forward in time, the Google Doodles increase in their level of interactivity including games and other multimedia. As an example for Valentine’s Day in 2017, Google released a Doodle game where the user helps a pangolin reach their valentine. Unfortunately the Wayback Machine does not seem to be able to load these features and instead displays a still image of the Doodle.
             <figure>
-                <img src = "./images/Feb1417.png">
+                <img src = "./images/Feb1417.png" alt = "Doodle from Valentine's Day 2017 with pangolins.">
                 <p class = "caption">This doodle was released for Valentine's day and was originally displayed as an interactive game. Unfortunately that functionality is lost on the Wayback Machine.</p>
             </figure>
             However, Google archives their own Doodles, so these games can be found. The rise of Doodle’s that encourage user interaction, such as games or multimedia, represent the shift away from the animated yet passive Flash technology. This Flash technology became a subject of scorn due to its passive and inaccessible nature (Ankerson pp. 393). While Doodle’s were never made using Flash, a fact that is illuminated by the Wayback Machine’s ability to load them, they are still a representation of the increasing value placed on interactivity over passive Flash in the more modern days of the internet. The key characteristics of the development and rise of the Doodle display the development of the design of the modern internet.
@@ -247,8 +250,8 @@ import A from "./web/[...slug].svelte";
         </div>
         <figure class = "items-center">
             <div style = "margin-left: 13%">
-                <img style= "width:41%" src = "./images/barcelonaTourism.PNG">
-                <img style= "width:47%" src = "./images/barcelonaSoccer.PNG">
+                <img style= "width:41%" src = "./images/barcelonaTourism.PNG" alt = "Barcelona search result that show tourism">
+                <img style= "width:47%" src = "./images/barcelonaSoccer.PNG" alt = "Barcelona search result that shows sport scores">
             </div>
             <p class = "caption">Left image shows a modern-day search of "barcelona" from a tourist's perspective. Right image was taken on the Wayback Machine in 2020, showing "barcelona" results with the sports widget. </p>
         </figure>
@@ -257,7 +260,7 @@ import A from "./web/[...slug].svelte";
         </div>
         <figure class = "items-center">
             <div style = "margin-left: 28%">
-                <img style= "width:60%" src = "./images/advancedSearch.PNG">
+                <img style= "width:60%" src = "./images/advancedSearch.PNG" alt = "Search result using advanced search">
             </div>
             <p class = "caption">Image shows a modern-day search of "vaccines :.edu OR :.gov" to obtain results ending in these top level domains.</p>
         </figure>
@@ -289,10 +292,10 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google’s PageRank, an application of harnessing collective intelligence, has gone hand in hand with other Google services such as Google Ads and Adsense to leverage the long-tail and match customers with retailers. Google Ads is a service in which users and advertisers can pay to appear in Google search results pertaining to specific keywords, while Google AdSense is a program in which clients can pay to advertise their products on other related user channels and websites. As Tim O’Reilly puts it, “Google figured out how to enable ad placement on virtually any webpage.” In terms of search ads, rather than utilizing pop up or banner ads, Google favored the use of minimally intrusive, consumer-friendly text advertising. 
         </div>
         <figure class = "items-center">
-            <img style= "width:45%; margin-left:25%; margin-right:auto; margin-bottom: 5px; display: block" src = "./images/shoeswayback.png">
+            <img style= "width:45%; margin-left:25%; margin-right:auto; margin-bottom: 5px; display: block" src = "./images/shoeswayback.png" alt = "Search result for shoes on the wayback machine">
             <div style = "margin-left: 5%">
-                <img style= "width:45%" src = "./images/shoes1.png">
-                <img style= "width:49%" src = "./images/shoes2.png">
+                <img style= "width:45%" src = "./images/shoes1.png" alt = "Search result for shoes using modern google">
+                <img style= "width:49%" src = "./images/shoes2.png" alt = "Search result for shoes using modern google">
             </div>
             <p class = "caption">The first of these images was taken on the wayback machine to show what a search used to look like, using the example search of shoes. The second to images show what a modern day search of the same keyword "shoes" brings up</p>
         </figure>
@@ -310,6 +313,14 @@ import A from "./web/[...slug].svelte";
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another limitation is that we only see dynamic and personalized content that is loaded by the archiver. Looking at one Wayback result for the Google search of `“google”`, the top result is “google.ca”. We can assume the archivist is Canadian. However, if someone wanted to view a website in a less common language or from the perspective of a small country, it’s much less likely for that to happen. 
         </div>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Conclusion</p>
+        <p id = "works-cited" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Works Cited</p>
+        <div class="body w-5/6 sm:w-3/5 mt-8 items-center">
+            <div style = "margin-left: 42%; margin-right: auto" class = "items-center justify-center">Works Cited:</div>
+            <br>Allen, Matthew. “What Was Web 2.0? Versions as the Dominant Mode of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet History.” New Media & Society, vol. 15, no. 2, Mar. 2013, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 260–275, doi:10.1177/1461444812451567.
+            <br>Ankerson, Megan Sapnar. “Writing Web Histories with an Eye on the Analog &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past.” New Media & Society, vol. 14, no. 3, May 2012, pp. 384–400, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doi:10.1177/1461444811414834.
+            <br>Burnett, Robert and Marshall, P. David. Web Theory. Routledge, 2003, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp. 81-104.
+            <br>O'Reilly, Time. “What Is Web 2.0.” O'Reilly, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html. 
+        </div>
         <p id = "conclusion" class="header relative mt-12 w-2/3 border-b-4 border-[#406ba3]">Appendix</p>
         <div class="body w-5/6 sm:w-3/5 mt-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A core part of our project is to see how google.com has changed over time. To aid our efforts in doing so, we created the visual timeline at the top of the site. We created this by writing a program to web scrape Wayback Machine snapshots over time at a reasonably high density. We then downloaded the HTML from these snapshots and formatted it so that images and CSS displays correctly. The resulting HTML pages are displayed on this website. The code is available <a class="link" href="https://github.com/melgrove/wayback-machine-scraper">here</a>.
